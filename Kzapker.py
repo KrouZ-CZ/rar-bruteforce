@@ -34,7 +34,7 @@ arch = my_namespace.fp
 chars = my_namespace.c
 n = my_namespace.n
 if my_namespace.fp == None:
-    print('Arch not detected')
+    print('Type --help')
     sys.exit()
 if not os.path.exists('extract_dir'):
     os.mkdir('extract_dir')
