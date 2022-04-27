@@ -54,7 +54,14 @@ def crack(pwd):
     if 'All OK' in out.decode():
         global crack_pass
         crack_pass = pwd
-
+print(f'\
+    RAR bruteforce v1.0 started\n\
+    ===========================\n\
+    Archive: {arch}\n\
+    Chars: {chars}\n\
+    Password lenght: {n}\n\
+    Threads: {my_namespace.t}\n\
+    ===========================')
 for i in range(passwd.len_password):
     if len(os.listdir('extract_dir')) != 0:
         break
